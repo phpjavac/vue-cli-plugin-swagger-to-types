@@ -13,7 +13,6 @@ module.exports = (api, projectOptions) => {
       return;
     }
 
-
     const url = projectOptions.pluginOptions.toTypes.host
 
     axios.get(url).then(res => {
@@ -25,6 +24,5 @@ module.exports = (api, projectOptions) => {
         console.log('生成Types成功！');
       })
     })
-
   })
 }
